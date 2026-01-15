@@ -1,9 +1,5 @@
 # REINFORCE Policy Gradient для задачи CartPole
 
-[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)](https://pytorch.org/)
-[![Gymnasium](https://img.shields.io/badge/Gymnasium-0.29+-green.svg)](https://gymnasium.farama.org/)
-
 Реализация алгоритма REINFORCE (Policy Gradient) с обучением с подкреплением для решения задачи CartPole-v1 из библиотеки Gymnasium.
 
 ## Цель проекта
@@ -18,7 +14,7 @@
 
 REINFORCE — это алгоритм обучения с подкреплением, который оптимизирует политику напрямую, используя градиент ожидаемого вознаграждения:
 
-∇θ J(θ) ≈ (1/N) ∑ ∇θ log πθ(a|s) * G(s,a)
+$$ \nabla_\theta \hat J(\theta) \approx { 1 \over N } \sum_{s_i, a_i} \nabla_\theta \log \pi_\theta (a_i \mid s_i) \cdot G_t(s_i, a_i) $$
 
 где:
 - πθ(a|s) — политика (вероятность выбора действия)
