@@ -1,12 +1,29 @@
-# Проекты по DS & ML
+# Reinforcement Learning Fundamentals
 
-В этом репозитории собраны различные учебные проекты, связанные с анализом данных и машинным обучением. Каждый проект представляет собой отдельную папку с подробным описанием и кодом.
+Проект, демонстрирующий фундаментальные алгоритмы обучения с подкреплением (Reinforcement Learning) — от классических табулярных методов до современных градиентных подходов. 
 
 ## Содержание
 
-| Название проекта                                     | Описание                                               | Стек технологий                    |
+| Название проекта                                     | Метод                                               | Категория                    |
 |------------------------------------------------------|--------------------------------------------------------|------------------------------------|
+| [policy_gradient](https://github.com/Shureshek/Reinforcement-Learning/tree/main/policy_gradient)         |  REINFORCE         | Value-based (табулярные)      |
+| [q-learning](https://github.com/Shureshek/Reinforcement-Learning/tree/main/q-learning)              | Q-Learning, SARSA             | Policy-based (градиентные)     |
 
-| [digit-recognizer](https://github.com/Shureshek/kaggle-playground/tree/main/02-digit-recognizer)         |  Распознавание цифры в наборе данных, содержащем десятки тысяч рукописных изображений MNIST.         | `Python`, `Pandas`, `Scikit-learn`      |
-| [titanic](https://github.com/Shureshek/kaggle-playground/tree/main/01-titanic)               | Предсказание, какие пассажиры выжили после крушения «Титаника».             | `Python`, `Pandas`, `Scikit-learn`, `Catboost`, `Xgboost`     |
 
+
+## Реализованные алгоритмы
+**Tabular Q-Learning** проект включает:
+- Q-Learning с SoftMax политикой
+
+- SARSA (State-Action-Reward-State-Action)
+
+- Expected Value SARSA
+
+- Дискретизатор непрерывных пространств
+
+- Сравнение алгоритмов на CliffWalking
+
+**Policy Gradient** проект включает:
+- REINFORCE алгоритм
+
+- Policy Network на PyTorch
